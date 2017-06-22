@@ -2,6 +2,12 @@ package example.com.kotlinexample
 
 class Person(val firstName: String, val surname: String) {
 
+    var children: MutableList<Person> = ArrayList()
+
+    constructor(firstName: String, surname: String, parent:Person) : this(firstName, surname) {
+        parent.children.add(this)
+    }
+
     fun getFullName(): String {
         return firstName + " " + surname
     }

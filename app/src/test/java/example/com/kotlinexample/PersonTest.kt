@@ -36,4 +36,11 @@ class PersonTest {
     fun undefinedTest() {
         assertEquals("Can't greet you in ZA yet", person.greetPerson("ZA"))
     }
+
+    @Test
+    fun createParent() {
+        val child = Person("Molly", "Fox", person)
+        assertEquals(person.children.size, 1)
+        assertEquals(child.getFullName(), person.children[0].getFullName())
+    }
 }
