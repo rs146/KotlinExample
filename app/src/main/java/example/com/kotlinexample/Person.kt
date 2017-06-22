@@ -1,14 +1,6 @@
 package example.com.kotlinexample
 
-class Person {
-    var firstName: String = ""
-    set(value) {
-        field = value
-    }
-    var surname: String = ""
-    set(value) {
-        field = value
-    }
+class Person(val firstName: String, val surname: String) {
 
     fun getFullName(): String {
         return firstName + " " + surname

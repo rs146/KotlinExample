@@ -18,4 +18,8 @@ class MyKotlinWork {
         sb.append("]")
         return sb.toString()
     }
+
+    companion object {
+        fun provideList() : List<String> = listOf("Ted", "Max", "Rex", "Donald", "Ronald", "Duo")
+    }
 }

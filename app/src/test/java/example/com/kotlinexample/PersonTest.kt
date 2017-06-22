@@ -1,18 +1,11 @@
 package example.com.kotlinexample
 
 import org.junit.Assert.*
-import org.junit.Before
 import org.junit.Test
 
 class PersonTest {
 
-    val person = Person()
-
-    @Before
-    fun setUp() {
-        person.firstName = "Jim"
-        person.surname = "Fox"
-    }
+    val person = Person("Jim", "Fox")
 
     @Test
     fun testGetFirstName() {
