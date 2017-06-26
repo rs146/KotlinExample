@@ -6,7 +6,7 @@ import org.junit.Assert.*
 
 class MyKotlinWorkTest {
 
-    val sut:MyKotlinWork = MyKotlinWork()
+    val sut = MyKotlinWork()
 
     @Test
     fun testToJson() {
@@ -24,8 +24,8 @@ class MyKotlinWorkTest {
     @Test
     fun forLoopIndexes() {
         val items = listOf("apple", "banana", "kiwi")
-        for (index in items.indices) {
-            println("item at $index is ${items[index]}")
+        for (skd in items.indices) {
+            println("item at $skd is ${items[skd]}")
         }
     }
 

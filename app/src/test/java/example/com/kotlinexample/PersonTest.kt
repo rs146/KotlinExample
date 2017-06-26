@@ -6,6 +6,7 @@ import org.junit.Test
 class PersonTest {
 
     val person = Person("Jim", "Fox")
+    val person2 = Person(surname = "Surname", firstName = "FirstName")
 
     @Test
     fun testGetFirstName() {

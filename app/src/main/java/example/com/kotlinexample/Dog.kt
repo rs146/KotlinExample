@@ -5,6 +5,12 @@ class Dog : Animal() {
         get() = 4
 
     override fun makeNoise() {
-        println("Bark")
+        val strBuilder = StringBuilder()
+        val ingified = strBuilder.ingify("Bark")
+        println(ingified)
+    }
+
+    fun StringBuilder.ingify(input: String) : String {
+        return input + "ing"
     }
 }

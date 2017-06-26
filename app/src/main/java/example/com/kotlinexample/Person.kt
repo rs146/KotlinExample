@@ -1,6 +1,6 @@
 package example.com.kotlinexample
 
-class Person(val firstName: String, val surname: String) {
+class Person(var firstName: String = "Ted", val surname: String = "Jsk") {
 
     var children: MutableList<Person> = ArrayList()
 
